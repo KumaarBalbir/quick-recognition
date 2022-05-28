@@ -11,7 +11,9 @@ const resolvers = require('./graphql/resolvers');
 
 const pubsub = new PubSub();
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000; 
+
+
 
 var env = process.env.NODE_ENV || 'development';
 
@@ -31,7 +33,7 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
 
 mongoose
-  .connect(process.env.MONGO_URI,{ useMongoClient:true }, {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
