@@ -33,7 +33,7 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
 
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect("mongodb+srv://kumaarbalbir:kumarbalbir@cluster0.xound.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
