@@ -31,7 +31,7 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
 
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(process.env.MONGO_URI,{ useMongoClient:true }, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
