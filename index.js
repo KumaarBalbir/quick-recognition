@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ path: '.env' });
 
 const { ApolloServer, PubSub } = require('apollo-server');
 
@@ -17,7 +17,7 @@ var env = process.env.NODE_ENV || 'development';
 
 const server = new ApolloServer({
   cors: {
-    origin: env=="development"? ['http://localhost:3000'] : ['https://quick-recognition-ms.herokuapp.com/'],
+    origin: env=="development"? ['http://localhost:3000'] : ['https://face-recognition-engage.herokuapp.com/'],
     credentials: true
   },
   typeDefs,
