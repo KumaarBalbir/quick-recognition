@@ -3,6 +3,7 @@ const Attendance = require("../../models/attendance.model");
 const Course = require("../../models/course.model");
 const Notification = require("../../models/notification.model");
 const Trx = require("../../models/trx.model");
+
 const Person = require("../../models/person.model");
 const { sendEmail } = require("../../util/mail");
 
